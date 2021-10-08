@@ -1,5 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
     led.toggle(4, 4)
+    serial.writeNumber(receivedNumber)
 })
 radio.onReceivedString(function (receivedString) {
     led.toggle(0, 0)
